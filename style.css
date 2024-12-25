@@ -1,0 +1,75 @@
+:root{
+    --text-color:#F8F8F8;
+    --bg-color:#101010;
+    --btn-color:#52FFE0;
+    --section-color:#2C2D31;
+}
+
+
+@font-face {
+    font-family: 'Red Rose';
+    src: url('../fonts/RedRose-Regular.woff2') format('woff2'),
+        url('../fonts/RedRose-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Red Rose';
+    src: url('../fonts/RedRose-Bold.woff2') format('woff2'),
+        url('../fonts/RedRose-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body{
+    font-weight: 400;
+    font-family: "RedRose";
+    line-height: 1.5;
+    font-size: 1.8rem;
+}
+
+*::after,*::before,*{
+    block-size: inherit;
+}
+
+*:focus{
+        outline: 2px dashed var(--text-color);
+        outline-offset: 2px;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,li,ul{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1640px;
+    width: 100%;
+    padding-left:20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
