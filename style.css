@@ -73,3 +73,44 @@ section{
     margin-left: auto;
 }
 
+header{
+    background-color: var(--bg-color);
+}
+
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__list {
+    max-width: 41rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+.header__item {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.header__link{
+color: var(--text-color);
+}
+.header__btn {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--section-color);
+    padding: 15px 28px;
+    border: #52FFE0 solid 2px;
+    border-radius: 5rem;
+    background-color: var(--btn-color);
+    transition: all 0.4s ease;
+}
+
+.header__btn:hover {
+    color: var(--btn-color);
+    background-color:transparent;
+}
