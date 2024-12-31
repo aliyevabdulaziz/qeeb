@@ -3,6 +3,7 @@
     --bg-color:#101010;
     --btn-color:#52FFE0;
     --section-color:#2C2D31;
+    --sectoin-color-2:#1D1E22;
 }
 
 
@@ -31,6 +32,7 @@ html{
 }
 
 body{
+    margin: 0;
     font-weight: 400;
     font-family: "RedRose";
     line-height: 1.5;
@@ -59,6 +61,7 @@ ul{
 }
 
 section{
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,6 +78,8 @@ section{
 
 header{
     background-color: var(--bg-color);
+    padding: 3.7rem 5rem;
+    transition: all ease 0.4s;
 }
 
 
@@ -84,7 +89,7 @@ header{
     justify-content: space-between;
 }
 .header__list {
-    max-width: 41rem;
+    max-width: 40rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -98,8 +103,13 @@ header{
 
 .header__link{
 color: var(--text-color);
+transition: all 0.4s ease;
 }
-.header__btn {
+
+.header__link:hover{
+    color: var(--btn-color);
+    }
+.btn {
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--section-color);
@@ -108,9 +118,178 @@ color: var(--text-color);
     border-radius: 5rem;
     background-color: var(--btn-color);
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 
-.header__btn:hover {
+.hamburger-icon{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.btn:hover {
     color: var(--btn-color);
     background-color:transparent;
+}
+
+
+/* marketplace start */
+.marketplace__section{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.marketplace__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+.marketplace {
+    max-width: 70.4rem;
+}
+.marketplace__title {
+    font-size: 3.6rem;
+    font-weight: 400;
+    letter-spacing: 4;
+    margin-bottom: 1.6rem;
+}
+.marketplace__title-2 {
+    font-size: 7.2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 6.4rem;
+}
+.markettplace-btn {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 8rem;
+}
+
+.markettplace-btn img{
+    margin-left: 5.4rem;
+}
+
+.marketplace__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 50.8rem;
+    width: 100%;
+}
+
+.marketplace__item-title {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+.marketplace__item-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #818698;
+}
+
+.boy{
+    position: relative;
+
+}
+
+.play-icon{
+    position: absolute;
+    width: 20rem;
+    height:  20rem;
+    left: 140rem; 
+    bottom: 150rem;
+}
+
+
+.catigories{
+    margin-bottom: 12rem;
+}
+
+.catigories__title {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 7.2rem;
+}
+.catigories__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.catigories__item {
+    max-height: 367px;
+    height: 100%;
+    max-width: 245px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px 51px 10px;
+    border-radius: 5rem;
+    background-color: var(--section-color);
+}
+.catigories__item img{
+    width: 225px;
+    height: 225px;
+    margin-bottom: 5rem;
+}
+.cotigories__text {
+}
+
+
+@media screen and (max-width:906px){
+    header{
+        padding: 2.5rem 4rem;
+    }
+    
+
+    .header__list {
+        max-width: 30rem;
+    }
+
+
+    .header__item {
+        font-size: 1.6rem;
+    }
+    
+    
+    .header__btn {
+        padding: 10px 22px;
+    }
+    
+    
+}
+
+
+
+
+@media screen and (max-width:700px){
+    header{
+        padding: 2rem 3rem;
+    }
+    
+
+    .header__list {
+    display: none;
+    }
+
+
+    .header__item {
+        font-size: 1.6rem;
+    }
+    
+    
+    .header__btn {
+    display: none;
+    }
+    .hamburger-icon{
+        display: inline-block;
+    }
+    
+    
 }
